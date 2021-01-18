@@ -9,9 +9,37 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <title>Daily Planner</title>
+    <title>Workday Planner</title>
 </head>
 <body>
+
+    <header class="page-header mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Workday Planner</h1>
+                    <h2>A light application to make your planning feel even lighter.</h2>
+                    <h3>[Current Date]</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="planner-box mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col task task-time">
+                    <p class="text-end">9 AM</p> 
+                </div>
+                <div class="col task task-text">
+                    <textarea name="task" id="nine-am" cols="30" rows="2" placeholder="Free!"></textarea>
+                </div>
+                <div class="col task save">
+                    <p>Save</p>
+                </div>
+            </div>
+        </div>
+    </main>
     
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
