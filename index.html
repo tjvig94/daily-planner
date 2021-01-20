@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,100&display=swap" rel="stylesheet">
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>Workday Planner</title>
 </head>
 <body>
 
-    <header class="page-header mb-5">
+    <header class="page-header mt-5 mb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col text-center">
@@ -28,14 +30,64 @@
     <main class="planner-box mt-5">
         <div class="container">
             <div class="row">
-                <div class="col task task-time">
-                    <p class="text-end">9 AM</p> 
+                <div class="input-group">
+                    <span class="input-group-text">9AM</span>
+                    <textarea id="nine-am" class="form-control hour-input" data-time="nine-am" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="nine-am">Save</button>
                 </div>
-                <div class="col task task-text">
-                    <textarea name="task" id="nine-am" cols="30" rows="2" placeholder="Free!"></textarea>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">10AM</span>
+                    <textarea id="ten-am"class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="ten-am">Save</button>
                 </div>
-                <div class="col task save">
-                    <p>Save</p>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">11AM</span>
+                    <textarea id="eleven-am" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="eleven-am">Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">12PM</span>
+                    <textarea id="twelve-pm" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="twelve-pm">Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">1PM</span>
+                    <textarea id="one-pm" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="one-pm">Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">2PM</span>
+                    <textarea id="two-pm" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="two-pm">Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">3PM</span>
+                    <textarea id="three-pm" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="three-pm">Save</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-text hour-input">4PM</span>
+                    <textarea id="four-pm" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="four-pm">Save</button>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-text hour-input">5PM</span>
+                    <textarea id="five-pm" class="form-control" aria-label="With textarea"></textarea>
+                    <button type="button" class="btn btn-success" data-time="five-pm">Save</button>
                 </div>
             </div>
         </div>
