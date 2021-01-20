@@ -1,24 +1,28 @@
 $(document).ready(function() {
 
-    let allTasks = [];
-    let parsedTasks = JSON.parse(localStorage.getItem("Tasks"));
-    
+    function displayTask(time) {
+        $("#" + time).val(localStorage.getItem(time));    
+    };
+
+    displayTask("nine-am");
+    displayTask("ten-am");
+    displayTask("eleven-am");
+    displayTask("twelve-pm");
+    displayTask("one-pm");
+    displayTask("two-pm");
+    displayTask("three-pm");
+    displayTask("four-pm");
+    displayTask("five-pm");
+
     function saveTask() {
         let currentHour = $(this).data("time");
         let currentTask = $("#" + currentHour).val();
-        let newTask = {
-            "time": currentHour,
-            "task": currentTask 
+        let currentTaskBox = $("#" + currentHour);
+        if (currentTask !== "") {
+            localStorage.setItem(currentHour, currentTask); 
+        
         };
-        // need to check if tasktime is already used, and to replace that task if it exists already
-
-        allTasks.push(newTask);
-
-        localStorage.setItem("Tasks", JSON.stringify(allTasks));
     };
-
+    
     $(".btn").on("click", saveTask);
-    
-    console.log(parsedTasks[0].task);
-    
 });
