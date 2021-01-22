@@ -31,3 +31,7 @@ main.planner-box {
     width: 60%;
     margin: auto;
 }
+
+button.save-all {
+    width: 100%;
+}
