@@ -24,3 +24,5 @@ the turn of an hour, the page needs to be reloaded.
  - There will need to be a warning modal if a user has unsaved changes on the page. Otherwise, a user may not have hit a save button
  and leave the page without storing any of the data they put in. The modal would give the user the option to leave the page without saving anything, or to remain on the page.
 
+![Image of planner application](assets\daily-planner-screenshot.png)
+
